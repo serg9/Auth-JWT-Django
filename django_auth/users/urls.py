@@ -1,8 +1,9 @@
-from .views import CreateUserAPIView, authenticate_user, UserRetrieveUpdateAPIView
+from . import views
 from django.urls import path
  
 urlpatterns = [
-    path('create/', CreateUserAPIView.as_view()),
-    path('obtain_token/', authenticate_user),
-    path('update/', UserRetrieveUpdateAPIView.as_view()),
+    path('create/', views.CreateUserAPIView),
+    path('auth/', views.authenticate_user),
+    #path('update/', views.UserRetrieveUpdateAPIView),
+    path('get_current/', views.current_user),
 ]
