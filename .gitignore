@@ -102,3 +102,7 @@ venv.bak/
 
 # mypy
 .mypy_cache/
+django_auth/users/migrations/__init__.py
+django_auth/users/__init__.py
+django_auth/django_auth/__init__.py
+django_auth/users/migrations/0001_initial.py
